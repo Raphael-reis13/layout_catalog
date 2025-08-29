@@ -22,8 +22,18 @@
 
   transition: transform 300ms;
 
+  &__description {
+    font-weight: 500;
+    font-size: $second-font-size;
+    line-height: $line-height-eighteen;
+    margin-bottom: $margin-four;
+  }
+
   &:hover {
     transform: scale(1.2);
+    .card__description {
+      color: #34568b;
+    }
   }
 
   &__image {
@@ -31,18 +41,6 @@
     height: 134px;
     margin-bottom: 40px;
     margin-top: 32px;
-  }
-
-  &__description {
-    font-weight: 500;
-    font-size: $second-font-size;
-    line-height: $line-height-eighteen;
-    margin-bottom: $margin-four;
-
-    &:hover {
-      color: #34568b;
-      cursor: pointer;
-    }
   }
 
   &__code {
@@ -99,12 +97,20 @@
       font-size: 14px;
       line-height: 16px;
       color: $color-white;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        background 300ms,
+        color 300ms;
 
       &:hover {
         color: $color-blue;
 
         display: flex;
-        background-color: $color-light-gray;
+        background-color: $color-white;
         border: 1px solid $color-blue;
         border-radius: $main-border-radius;
         width: 164px;
