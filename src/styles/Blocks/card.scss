@@ -108,15 +108,7 @@
 
       &:hover {
         color: $color-blue;
-
-        display: flex;
         background-color: $color-white;
-        border: 1px solid $color-blue;
-        border-radius: $main-border-radius;
-        width: 164px;
-        height: 38px;
-        justify-content: center;
-        align-items: center;
       }
     }
   }
